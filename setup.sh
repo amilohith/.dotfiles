@@ -1,18 +1,23 @@
 #/usr/bin/sh
 
+#########################################
+#                                       #
+#    Creates symlinks from home         #
+#    directory to dotfiles directory    #
+#                                       #
+#########################################
+
 # home directory
 homedir=$HOME
+
 
 # dotfiles directory
 dotdir=$homedir/.dotfiles
 
+
 # symlink files
 files="vimrc"
 
-# changing to dotfiles directory
-echo "Changing to $dotdir directory"
-cd $dotdir
-echo "...done"
 
 # creating symlinks
 for file in $files; do
