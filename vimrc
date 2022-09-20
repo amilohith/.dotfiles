@@ -14,7 +14,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-scripts/grep.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'fatih/vim-go'
-if v:versioin >= 801
+if v:version >= 801
     " lsp settings supports vim-8 and higher
     Plug 'prabirshrestha/vim-lsp'
     Plug 'mattn/vim-lsp-settings'
@@ -100,7 +100,6 @@ function! ToggleNumbering()
     set nonumber!
 endfunction
 
-
 " vim-airline
 let g:airline_theme = 'murmur'
 let g:airline#extensions#branch#enabled = 1
@@ -112,3 +111,7 @@ let g:airline_skip_empty_sections = 1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
+
+" Fzf
+nnoremap <C-p> :Files<CR>
+nnoremap <C-g> :GFiles<CR>
