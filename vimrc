@@ -11,9 +11,13 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-scripts/grep.vim'
-Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
 Plug 'jiangmiao/auto-pairs'
+Plug 'fatih/vim-go'
+if v:versioin >= 801
+    " lsp settings supports vim-8 and higher
+    Plug 'prabirshrestha/vim-lsp'
+    Plug 'mattn/vim-lsp-settings'
+endif
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -35,6 +39,7 @@ let python_highlight_all = 1
 filetype indent on
 set laststatus=2
 set scrolloff=8
+set cursorline
 
 " FileType indent
 filetype plugin indent on
