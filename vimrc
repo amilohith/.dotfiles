@@ -14,6 +14,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-scripts/grep.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'fatih/vim-go'
+Plug 'SiddharthShyniben/pitch'
 if v:version >= 801
     " lsp settings supports vim-8 and higher
     Plug 'prabirshrestha/vim-lsp'
@@ -115,3 +116,8 @@ endif
 " Fzf
 nnoremap <C-p> :Files<CR>
 nnoremap <C-g> :GFiles<CR>
+
+" ColorScheme
+colorscheme pitch
+set background=dark
+set t_Co=256
