@@ -50,7 +50,6 @@ autocmd FileType go setlocal ts=4 sts=4 sw=4 expandtab
 " Visual Settings
 set number
 set relativenumber
-set ruler
 set visualbell
 
 " Remaps
@@ -68,6 +67,8 @@ set smartindent
 nmap <Tab> >>
 nmap <S-Tab> <<
 imap <S-Tab> <Esc><<i
+vmap <Tab> >gv
+vmap <S-Tab> <gv
 
 " Files
 set noswapfile
