@@ -64,7 +64,8 @@ set visualbell
 map <leader>n :call ToggleNumbering()<CR>
 map <leader>h :noh<CR>
 map <leader>p :set paste!<CR>
-
+nmap <C-d> <C-d>zz
+nmap <C-u> <C-u>zz
 
 " Terminal emulation
 nnoremap <silent> <leader>sh :terminal<CR>
