@@ -117,8 +117,26 @@ endif
 " Fzf
 nnoremap <C-p> :Files<CR>
 nnoremap <C-g> :GFiles<CR>
+let g:fzf_action = {
+\ 'enter': 'tab split',
+\ 'ctrl-x': 'split',
+\ 'ctrl-v': 'vsplit' }
 
 " ColorScheme
 colorscheme pitch
 set background=dark
 set t_Co=256
+
+" GitGutter
+map <leader>gt :GitGutterToggle<CR>
+map <leader>gn :GitGutterNextHunk<cr>
+map <leader>gp :GitGutterPrevHunk<cr>
+set updatetime=250
+let g:gitgutter_max_signs = 500
+let g:gitgutter_map_keys = 0
+let g:gitgutter_override_sign_column_highlight = 0
+highlight clear SignColumn
+highlight GitGutterAdd ctermfg=2
+highlight GitGutterChange ctermfg=3
+highlight GitGutterDelete ctermfg=1
+highlight GitGutterChangeDelete ctermfg=4
