@@ -13,8 +13,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-scripts/grep.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'gcatlin/modokai.vim'
 Plug 'fatih/vim-go'
-Plug 'SiddharthShyniben/pitch'
 if v:version >= 801
     " lsp settings supports vim-8 and higher
     Plug 'prabirshrestha/vim-lsp'
@@ -123,7 +123,7 @@ let g:fzf_action = {
 \ 'ctrl-v': 'vsplit' }
 
 " ColorScheme
-colorscheme pitch
+colorscheme modokai
 set background=dark
 set t_Co=256
 

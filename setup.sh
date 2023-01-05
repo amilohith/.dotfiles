@@ -16,7 +16,7 @@ dotdir=$homedir/.dotfiles
 
 
 # symlink files
-files="vimrc"
+files="vimrc tmux.conf"
 
 
 # creating symlinks
